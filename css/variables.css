@@ -1,0 +1,79 @@
+/* ==========================================================================
+   PRECISE CRAFT SOLUTION LIMITED — Design Tokens
+   Brand colors extracted directly from company logo.
+   ========================================================================== */
+
+:root {
+
+  /* ---- Color: Navy (primary, dominant) ---- */
+  --navy-900: #071D38;   /* deepest — dark section backgrounds */
+  --navy-800: #0B2C54;   /* brand primary — logo navy */
+  --navy-700: #123A6B;   /* hover / lighter surface on dark */
+  --navy-600: #1D4E86;   /* links on dark, mid accents */
+
+  /* ---- Color: Gold (accent — used sparingly) ---- */
+  --gold-600: #A97423;   /* deep gold — text-on-light emphasis */
+  --gold-500: #C6922C;   /* brand primary gold */
+  --gold-400: #D9A94E;   /* lighter gold — hover states */
+  --gold-100: #F3E4C6;   /* faint gold wash — badges, tints */
+
+  /* ---- Color: Neutrals (warm, not clinical) ---- */
+  --concrete-100: #F6F3EE; /* page background — warm off-white */
+  --concrete-200: #EDE8DF; /* section alternation */
+  --concrete-300: #DDD6C9; /* borders, hairlines */
+  --steel-400: #8B93A0;    /* secondary neutral, muted labels */
+  --steel-600: #565F6B;    /* body text on light, secondary */
+  --ink-900: #1A1F27;      /* primary text — warm near-black */
+
+  /* ---- Color: Surface / Utility ---- */
+  --white: #FFFFFF;
+  --success: #2F6B4F;
+  --error: #A63A3A;
+
+  /* ---- Typography ---- */
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Type scale (fluid via clamp) */
+  --text-display: clamp(2.75rem, 6vw, 5.5rem);
+  --text-h1: clamp(2.25rem, 4.5vw, 3.75rem);
+  --text-h2: clamp(1.75rem, 3.2vw, 2.75rem);
+  --text-h3: clamp(1.35rem, 2.2vw, 1.75rem);
+  --text-h4: clamp(1.1rem, 1.5vw, 1.35rem);
+  --text-body-lg: clamp(1.05rem, 1.3vw, 1.2rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+
+  /* ---- Spacing (8pt grid) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ---- Layout ---- */
+  --container-max: 1240px;
+  --container-pad: clamp(20px, 5vw, 64px);
+
+  /* ---- Radius (minimal — this brand is angular, not soft) ---- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* ---- Shadow (subtle, elevation not decoration) ---- */
+  --shadow-sm: 0 1px 3px rgba(7, 29, 56, 0.08);
+  --shadow-md: 0 4px 16px rgba(7, 29, 56, 0.10);
+  --shadow-lg: 0 12px 32px rgba(7, 29, 56, 0.14);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+}

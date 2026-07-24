@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Services Page
+   ========================================================================== */
+
+.service-block {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: var(--space-8);
+  padding-block: var(--space-8);
+  border-bottom: 1px solid var(--concrete-300);
+  scroll-margin-top: 100px;
+}
+
+.service-block:first-child {
+  padding-top: 0;
+}
+.service-block:last-child {
+  border-bottom: none;
+}
+
+.service-block__index {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--concrete-300);
+}
+
+.service-block__body h2 {
+  margin-bottom: var(--space-4);
+}
+
+.service-block__body p.lead {
+  margin-bottom: var(--space-6);
+}
+
+.service-block__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.service-block__tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--steel-600);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--concrete-300);
+}
+
+@media (max-width: 760px) {
+  .service-block {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .service-block__index {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Capabilities Page
+   ========================================================================== */
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.capability-card {
+  background: var(--white);
+  border: 1px solid var(--concrete-300);
+}
+
+.capability-card__image img{
+  aspect-ratio: 16 / 10;
+ width: auto;
+  height: 450px;
+  background:
+    repeating-linear-gradient(135deg, var(--concrete-200), var(--concrete-200) 10px, var(--concrete-300) 10px, var(--concrete-300) 11px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  border-bottom: 3px solid var(--gold-500);
+}
+
+.capability-card__image span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--steel-600);
+}
+
+.capability-card__body {
+  padding: var(--space-6);
+}
+
+.capability-card__body h3 {
+  margin-bottom: var(--space-3);
+}
+
+.capability-card__body p {
+  font-size: var(--text-small);
+}
+
+@media (max-width: 760px) {
+  .capability-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Capacity strip ---- */
+.capacity-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--concrete-300);
+}
+
+.capacity-strip__item {
+  padding: var(--space-6);
+  border-right: 1px solid var(--concrete-300);
+}
+.capacity-strip__item:last-child { border-right: none; }
+
+.capacity-strip__item h4 {
+  text-transform: none;
+  margin-bottom: var(--space-2);
+}
+
+.capacity-strip__item p {
+  font-size: var(--text-small);
+}
+
+@media (max-width: 860px) {
+  .capacity-strip { grid-template-columns: 1fr 1fr; }
+  .capacity-strip__item:nth-child(2) { border-right: none; }
+  .capacity-strip__item { border-bottom: 1px solid var(--concrete-300); }
+}
+@media (max-width: 560px) {
+  .capacity-strip { grid-template-columns: 1fr; }
+  .capacity-strip__item { border-right: none; }
+}
