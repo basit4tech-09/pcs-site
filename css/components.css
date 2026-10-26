@@ -124,7 +124,14 @@
 
 /* ---- Inner Page Hero (About / Services / Capabilities / Contact) ---- */
 .page-hero {
-  background: var(--navy-900);
+  background-color: var(--navy-900);
+background-image:
+  linear-gradient(90deg, rgba(7, 29, 56, 0.92) 0%, rgba(7, 29, 56, 0.78) 45%, rgba(7, 29, 56, 0.55) 100%),
+  url('../assets/images/works/IMG-20261025-WA0108.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
   padding-block: var(--space-8) var(--space-7);
   position: relative;
   overflow: hidden;
@@ -185,6 +192,8 @@
   z-index: 100;
   background: var(--navy-900);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 90px;
+  padding-top: 15px;
 }
 
 .site-header__inner {
@@ -307,6 +316,13 @@
   }
   .nav-toggle {
     display: flex;
+  }
+}
+@media (max-width: 940px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(7, 29, 56, 0.86), rgba(7, 29, 56, 0.86)),
+      url('../assets/images/works/IMG-20261025-WA0118.jpg');
   }
 }
 

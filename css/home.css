@@ -4,7 +4,14 @@
 
 /* ---- Hero ---- */
 .hero {
-  background: var(--navy-900);
+  background-color: var(--navy-900);
+background-image:
+  linear-gradient(90deg, rgba(7, 29, 56, 0.92) 0%, rgba(7, 29, 56, 0.78) 45%, rgba(7, 29, 56, 0.55) 100%),
+  url('../assets/images/works/IMG-20261025-WA0108.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
   position: relative;
@@ -217,6 +224,13 @@
 
 @media (max-width: 640px) {
   .cta-band__inner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 940px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(7, 29, 56, 0.86), rgba(7, 29, 56, 0.86)),
+      url('../assets/images/logo.png');
+  }
 }
 
 /* ---- Reveal on scroll ---- */

@@ -25,4 +25,17 @@ function initServicePrefill() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', initServicePrefill);
+function initSentNotice() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('sent') !== 'true') return;
+
+  const banner = document.getElementById('form-sent');
+  if (!banner) return;
+  banner.classList.add('is-active');
+  banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initServicePrefill();
+  initSentNotice();
+});

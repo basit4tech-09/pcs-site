@@ -16,7 +16,7 @@
 .capability-card__image img{
   aspect-ratio: 16 / 10;
  width: auto;
-  height: 450px;
+  height: 800px;
   background:
     repeating-linear-gradient(135deg, var(--concrete-200), var(--concrete-200) 10px, var(--concrete-300) 10px, var(--concrete-300) 11px);
   display: flex;
@@ -26,7 +26,24 @@
   gap: var(--space-3);
   border-bottom: 3px solid var(--gold-500);
 }
-
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+.work-card {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--concrete-300);
+}
+.work-card img {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-bottom: 3px solid var(--gold-500);
+}
+@media (max-width: 940px) { .works-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .works-grid { grid-template-columns: 1fr; } }
 .capability-card__image span {
   font-family: var(--font-mono);
   font-size: 0.7rem;
