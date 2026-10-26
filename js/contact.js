@@ -25,6 +25,25 @@ function initServicePrefill() {
   }
 }
 
+function initFormSubmit() {
+  const form = document.getElementById('inquiry-form');
+  if (!form) return;
+
+  const button = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', () => {
+    button.textContent = 'Sending…';
+    setTimeout(() => { button.disabled = true; }, 0);
+  });
+
+  // Reset the button if the visitor presses Back
+  window.addEventListener('pageshow', () => {
+    button.disabled = false;
+    button.textContent = 'Send Inquiry';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initFormSubmit);
 function initSentNotice() {
   const params = new URLSearchParams(window.location.search);
   if (params.get('sent') !== 'true') return;
