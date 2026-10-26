@@ -229,7 +229,7 @@ background-repeat: no-repeat;
   .hero {
     background-image:
       linear-gradient(rgba(7, 29, 56, 0.86), rgba(7, 29, 56, 0.86)),
-      url('../assets/images/logo.png');
+      url('../assets/images/works/IMG-20261025-WA0107.jpg');
   }
 }
 
